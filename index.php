@@ -71,15 +71,15 @@
 ?>
     <p><?=$item['listAnsw1']['answ1']?></p>
     <ol>
-      <li>
+      <li style="padding: 0.5rem; ">
         <?=$item['listAnsw1']['item1']?>
-        <ol>
+        <ol style="list-style-type: lower-latin;">
           <?php foreach($item['listAnsw1']['listAnsw2'] as $listItem){
-            echo "<li>{$listItem}</li>";
+            echo "<li style=\"padding: 0.5rem; \">{$listItem}</li>";
           }?>
         </ol>
       </li>
-      <li>
+      <li style="padding: 0.5rem; ">
       <?=$item['listAnsw1']['item2']?>
       </li>
     </ol>
